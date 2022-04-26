@@ -22,6 +22,12 @@ public class A_Max_Consecutive_Ones {
 
     public static void main(String[] args) {
         A_Max_Consecutive_Ones a = new A_Max_Consecutive_Ones();
-        a.findMaxConsecutiveOnes(new int[]{1,1,0,1,1,1});
+        System.out.println(a.findMaxConsecutiveOnes(new int[]{1,1,0,1,1,1}));
     }
+
+    /**
+     * NOTE: There is no proof that for performance is better than foreach.
+     * But in this exercise, it just happened to perform better. Also the number above are arbitrary,
+     * it changes in every run.
+     */
 }
