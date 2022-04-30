@@ -27,7 +27,7 @@ public class B_Find_Numbers_with_Even_Number_of_Digits {
         System.out.println(b.findNumbers(new int[]{12, 345, 2, 6, 7896}));
     }
 
-    //Winning solution: NOTE: read the question and the contraints properly and take advantage of it.
+    //Winning solution: NOTE: read the question and the constraints properly and take advantage of it.
     // Don't always design a solution of fits all.
     //min number is 1 and max number is 100000
     public int findNumbers_1(int[] nums){
