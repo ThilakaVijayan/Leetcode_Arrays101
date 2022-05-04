@@ -1,4 +1,4 @@
-package com.thilaka.introduction;
+package com.thilaka.a.introduction;
 
 public class A_Max_Consecutive_Ones {
 
