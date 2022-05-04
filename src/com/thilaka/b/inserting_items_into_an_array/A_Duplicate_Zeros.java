@@ -1,6 +1,8 @@
 package com.thilaka.b.inserting_items_into_an_array;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class A_Duplicate_Zeros {
     public int[] duplicateZeros(int[] arr) {
@@ -22,19 +24,19 @@ public class A_Duplicate_Zeros {
     }
 
     /**
-     * This solution is not right for this exercise. It clearly states not to create a new array.
+     * Winning solution
      */
     public int[] attempt_2(int[] arr){
-        int[] newArr = new int[arr.length];
-        for(int i=0,j=0;j<arr.length;i++,j++){
+        Queue<Integer> queue = new LinkedList<>();
+        for(int i=0;i<arr.length;i++){
             if(arr[i] == 0){
-                newArr[j]=arr[i];
-                newArr[++j]=arr[i];
+                queue.add(0);
+                queue.add(0);
             }else{
-                newArr[j] = arr[i];
+                queue.add(arr[i]);
             }
+            arr[i] = queue.poll();
         }
-        arr = newArr;
         return arr;
     }
 }
